@@ -1,0 +1,37 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="container mt-5">
+            <h2>User Information</h2>
+            <form action="/add" method="post" enctype="multipart/form-data">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+
+                <!-- User Photo Upload -->
+                <div class="mb-3">
+                    <label for="image" class="form-label">Select Image</label>
+                    <input type="file" class="form-control" id="image" name="image" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <%- include('layout/footer') %>
